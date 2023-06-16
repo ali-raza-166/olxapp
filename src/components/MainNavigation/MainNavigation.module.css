@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 3rem 0rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  font-weight: bold;
+  font-size: 4rem;
+}
