@@ -1,8 +1,13 @@
 .wrapper {
-  padding: 3rem 0rem 0rem 0rem;
-  display: flex;
+  /* padding: 3rem 3rem 0rem 3rem; */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  padding: 3rem 3rem 0 3rem;
+  background-color: #f7f8ff;
+}
+.mainContent {
+  padding: 0 3rem;
 }
 .logo {
   font-weight: bold;

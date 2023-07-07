@@ -1,4 +1,5 @@
 import MainNavigation from "../components/MainNavigation/MainNavigation";
+import Footer from "../components/Footer/Footer";
 const ErrorPage = () => {
   return (
     <>
@@ -7,6 +8,7 @@ const ErrorPage = () => {
         <h1>This is the error page</h1>
         <p>Could not find this Page</p>
       </main>
+      <Footer />
     </>
   );
 };

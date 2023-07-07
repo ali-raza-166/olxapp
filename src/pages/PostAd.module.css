@@ -1,0 +1,18 @@
+.topbar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #f7f8ff;
+  padding: 0.9rem 3rem;
+}
+.logo {
+  margin: 0;
+}
+.backButton {
+  padding-top: 0.6rem;
+  color: #002f34;
+}
+.heading {
+  text-align: center;
+  color: #002f34;
+}

@@ -1,0 +1,23 @@
+.footer {
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f8ff;
+}
+.heading {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+.subheading {
+  margin: 0.1rem 0;
+  color: grey;
+  font-size: 0.8rem;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+}
+.socialIcon {
+  display: flex;
+  align-items: center;
+}

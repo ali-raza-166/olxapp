@@ -1,0 +1,20 @@
+.categorySection {
+  padding-bottom: 1rem;
+}
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+.sectionList {
+  display: flex;
+  justify-content: space-between;
+}
+.categorySectionHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+.categorySectionHeaderRight {
+  display: flex;
+  align-items: center;
+}

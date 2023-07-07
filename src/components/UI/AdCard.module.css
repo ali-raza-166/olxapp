@@ -1,0 +1,16 @@
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+}
+.location {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.cardFooter {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}

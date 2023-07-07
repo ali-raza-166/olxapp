@@ -1,54 +1,25 @@
-import { Autocomplete, TextField, InputAdornment } from "@mui/material";
-import {
-  LocationOnOutlined,
-  KeyboardArrowDownOutlined,
-} from "@mui/icons-material";
+import { LocationOnOutlined } from "@mui/icons-material";
+import AutoComplete from "../UI/AutoComplete";
 const LocationsAutoComplete = () => {
-  const options = top100Films.map((option) => {
-    const firstLetter = option.title[0].toUpperCase();
-    return {
-      firstLetter: /[0-9]/.test(firstLetter) ? "0-9" : firstLetter,
-      ...option,
-    };
-  });
-
   return (
-    <Autocomplete
-      id="grouped-demo"
-      popupIcon={<KeyboardArrowDownOutlined />}
-      options={options.sort(
-        (a, b) => -b.firstLetter.localeCompare(a.firstLetter)
-      )}
-      groupBy={(option) => option.firstLetter}
-      getOptionLabel={(option) => option.title}
-      sx={{ width: 300 }}
-      size="small"
-      renderInput={(params) => (
-        <TextField
-          {...params}
-          label="Location"
-          InputProps={{
-            ...params.InputProps,
-            startAdornment: (
-              <InputAdornment position="start">
-                <LocationOnOutlined fontSize="small" />
-              </InputAdornment>
-            ),
-          }}
-        />
-      )}
-    />
+    <div>
+      <AutoComplete
+        dataArray={locations}
+        label={"Location"}
+        width={300}
+        icon={LocationOnOutlined}
+      />
+    </div>
   );
 };
-export default LocationsAutoComplete;
 
-// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films = [
-  { title: "The Shawshank Redemption", year: 1994 },
-  { title: "The Godfather", year: 1972 },
-  { title: "The Godfather: Part II", year: 1974 },
-  { title: "The Dark Knight", year: 2008 },
-  { title: "12 Angry Men", year: 1957 },
-  { title: "Schindler's List", year: 1993 },
-  { title: "Pulp Fiction", year: 1994 },
+export default LocationsAutoComplete;
+const locations = [
+  { label: "Use Current Location" },
+  { label: "Lahore" },
+  { label: "Faisalabad" },
+  { label: "Karachi" },
+  { label: "Islamabad" },
+  { label: "Peshawar" },
+  { label: "Sargodha" },
 ];

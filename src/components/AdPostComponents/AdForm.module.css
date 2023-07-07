@@ -1,0 +1,25 @@
+.adFormWrpper {
+  margin: 0 3rem;
+  border: 1px solid rgba(0, 47, 52, 0.36);
+}
+.adFormItem {
+  padding: 2rem 3rem;
+}
+.itemHeading {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.itemSubHeading {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.horizontalLine {
+  margin: 0;
+}
+.textArea {
+  width: 100%;
+}
+.imagePickers {
+  display: flex;
+  flex-wrap: wrap;
+}

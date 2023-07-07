@@ -1,0 +1,22 @@
+.formWrapper {
+  margin: 1.5rem 3rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(0, 47, 52, 0.36);
+}
+.allInputsWrapper {
+  padding-top: 2rem;
+}
+.formItem {
+  padding: 0.5rem 3rem;
+}
+.itemHeading {
+  padding: 0 3rem;
+  font-weight: bold;
+}
+.itemSubHeading {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.horizontalLine {
+  margin: 0;
+}

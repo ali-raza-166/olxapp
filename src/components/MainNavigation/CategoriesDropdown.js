@@ -1,8 +1,7 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { PopoverPaper, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { KeyboardArrowDownOutlined } from "@mui/icons-material";
 const CategoriesDropdown = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,11 +36,17 @@ const CategoriesDropdown = () => {
       <Menu
         PaperProps={{
           style: {
-            width: "90%",
+            width: "89%",
             height: "80%",
-            top: "300px",
+            marginLeft: "0",
             maxHeight: "unset",
           },
+        }}
+        elevation={1}
+        style={{
+          marginTop: "1.5em",
+          mariginLeft: "0",
+          // boxShadow:"none"
         }}
         sx={{ dropShadow: "0" }}
         id="basic-menu"
@@ -52,9 +57,10 @@ const CategoriesDropdown = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleClose}>Mobile Phones</MenuItem>
+        <MenuItem onClick={handleClose}>Cars</MenuItem>
+        <MenuItem onClick={handleClose}>Houses</MenuItem>
+        <MenuItem onClick={handleClose}>Motorcycles</MenuItem>
       </Menu>
     </div>
   );
