@@ -2,7 +2,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { CARS, BIKES, MOBILES, HOUSES } from "../../../data";
-import AdCard from "../../UI/AdCard";
+import AdCard from "../../UI/AdCardVertical";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

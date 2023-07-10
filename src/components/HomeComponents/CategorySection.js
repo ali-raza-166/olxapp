@@ -1,4 +1,4 @@
-import AdCard from "../UI/AdCard";
+import AdCard from "../UI/AdCardVertical";
 import classes from "./CategorySection.module.css";
 import { Typography } from "@mui/material";
 import {

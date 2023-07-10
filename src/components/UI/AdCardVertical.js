@@ -10,7 +10,7 @@ import {
   LocationOnOutlined,
   FavoriteBorderOutlined,
 } from "@mui/icons-material";
-import classes from "./AdCard.module.css";
+import classes from "./AdCardVertical.module.css";
 
 export default function AdCard({ data }) {
   return (
