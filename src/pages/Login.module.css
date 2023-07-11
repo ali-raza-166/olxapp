@@ -1,0 +1,53 @@
+.topbar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #f7f8ff;
+  padding: 0.9rem 3rem;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.formWrapper {
+  margin: 1.5rem 3rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgba(0, 47, 52, 0.36);
+}
+.allInputsWrapper {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  max-width: 500px;
+}
+.formItem {
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signupButton {
+  cursor: pointer;
+  color: blue;
+}
+.loginWithGoogle {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+.forgotPassword {
+  padding: 0 3rem;
+
+  text-align: right;
+}
+.loginWithGoogle:hover {
+  background-color: #ccc;
+}
+.backButton {
+  cursor: pointer;
+  margin-top: 7px;
+}

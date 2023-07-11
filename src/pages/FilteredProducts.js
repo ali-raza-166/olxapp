@@ -54,7 +54,7 @@ const FilteredProducts = () => {
           </div>
         </div>
         <div className={classes.content}>
-          <p className={classes.heading}>Content</p>
+          <p className={classes.heading}>Results</p>
           <AdCardHorizontal
             sx={{ display: "flex", flexDirection: "row" }}
             data={{

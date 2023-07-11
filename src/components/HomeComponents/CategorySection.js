@@ -1,4 +1,4 @@
-import AdCard from "../UI/AdCardVertical";
+import AdCardVertical from "../UI/AdCardVertical";
 import classes from "./CategorySection.module.css";
 import { Typography } from "@mui/material";
 import {
@@ -11,7 +11,7 @@ const CategorySection = ({
   data: categoryData,
 }) => {
   const carsList = categoryData.map((item) => (
-    <AdCard key={item.id} data={item} />
+    <AdCardVertical key={item.id} data={item} />
   ));
   return (
     <div className={classes.categorySection}>

@@ -75,7 +75,7 @@ export const BIKES = [
     timeStamp: "12 hours ago",
   },
   {
-    id: 9,
+    id: 8,
     price: "RS 211000",
     image: img8,
     description: "Lorem ipsum, lorem ipsum, lorem ipsum",

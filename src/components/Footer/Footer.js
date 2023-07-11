@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import classes from "./Footer.module.css";
 import { Facebook, YouTube, Instagram, Twitter } from "@mui/icons-material";
 const Footer = () => {
-  const withoutNavFooterLinks = ["/post"];
+  const withoutNavFooterLinks = ["/post", "/login", "/signup"];
   const { pathname } = useLocation();
   if (withoutNavFooterLinks.some((item) => pathname.includes(item)))
     return null;

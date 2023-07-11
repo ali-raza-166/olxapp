@@ -9,7 +9,7 @@ import { useState } from "react";
 import AccountMenu from "./AccountMenu";
 const MainNavigation = () => {
   const [isAuth, setIsAuth] = useState(true);
-  const withoutNavRoutes = ["/post"];
+  const withoutNavRoutes = ["/post", "/login", "/signup"];
   const { pathname } = useLocation();
   if (withoutNavRoutes.some((item) => pathname.includes(item))) return null;
   return (

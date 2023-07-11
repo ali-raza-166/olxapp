@@ -8,11 +8,12 @@ import {
 } from "@mui/material";
 import {
   LocationOnOutlined,
+  Favorite,
   FavoriteBorderOutlined,
 } from "@mui/icons-material";
 import classes from "./AdCardVertical.module.css";
 
-export default function AdCard({ data }) {
+export default function AdCardVertical({ data, isFavourite }) {
   return (
     <Card sx={{ maxWidth: 400 }}>
       <CardMedia sx={{ height: 140 }} image={data.image} title="green iguana" />
@@ -27,7 +28,11 @@ export default function AdCard({ data }) {
           </Typography>
           <CardActions disableSpacing sx={{ padding: 0 }}>
             <IconButton aria-label="add to favorites" sx={{ padding: 0 }}>
-              <FavoriteBorderOutlined />
+              {isFavourite ? (
+                <Favorite style={{ color: "red" }} />
+              ) : (
+                <FavoriteBorderOutlined />
+              )}
             </IconButton>
           </CardActions>
         </div>

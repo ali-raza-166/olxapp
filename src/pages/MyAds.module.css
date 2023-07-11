@@ -1,0 +1,8 @@
+.myAdsWrapper {
+  margin: 1.5rem 3rem;
+}
+.myAdsListWrapper {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

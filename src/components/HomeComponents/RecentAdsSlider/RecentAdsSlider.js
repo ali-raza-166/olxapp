@@ -1,5 +1,6 @@
 // import React, { useRef, useState } from "react";
 // Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { CARS, BIKES, MOBILES, HOUSES } from "../../../data";
 import AdCard from "../../UI/AdCardVertical";
@@ -13,7 +14,7 @@ import "./RecentAdsSlider.css";
 import { Pagination, Navigation } from "swiper";
 
 const RecentAdsSlider = () => {
-  const data = [...HOUSES, ...CARS, ...BIKES, ...MOBILES];
+  const data = [...CARS, ...BIKES, ...MOBILES, ...HOUSES];
   return (
     <>
       <Swiper
@@ -27,10 +28,10 @@ const RecentAdsSlider = () => {
         slidesPerGroup={4}
         className="mySwiper"
       >
-        {data.map((itm) => {
+        {data.map((item, index) => {
           return (
-            <SwiperSlide className="slide-style">
-              <AdCard key={itm.id} data={itm} />
+            <SwiperSlide key={item.id} className="slide-style">
+              <AdCard data={item} />
             </SwiperSlide>
           );
         })}

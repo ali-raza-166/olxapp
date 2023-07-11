@@ -1,5 +1,29 @@
 .cardContentHeader {
+}
+.head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.locationContainer {
+  display: flex;
+  align-items: center;
+}
+.cardContentFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 }
