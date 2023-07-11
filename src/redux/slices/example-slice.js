@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const exampleSlice = createSlice({
   name: "exampleSlice",
   initialState: { cartIsVisible: false, notification: null },

@@ -4,6 +4,7 @@ import LocationsAutoComplete from "../components/MainNavigation/LocationsAutoCom
 import { TextField } from "@mui/material";
 import AdCardHorizontal from "../components/UI/AdCardHorizontal";
 import bike1 from "../assets/bike1.jpeg";
+
 const FilteredProducts = () => {
   const [minValue, setMinValue] = useState("");
   const [maxValue, setMaxValue] = useState("");
