@@ -3,6 +3,8 @@ import { useState } from "react";
 import classes from "./Login.module.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { authActions } from "../redux/slices/auth-slice";
+import { useDispatch } from "react-redux";
 import {
   KeyboardBackspaceOutlined,
   LoginOutlined,
@@ -10,10 +12,16 @@ import {
 } from "@mui/icons-material";
 import { TextField, Button } from "@mui/material";
 const Login = () => {
+  const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const backClickHandler = (e) => {
+  const loginHandler = (event) => {
+    event.preventDefault();
+    dispatch(authActions.login());
+    navigate("/");
+  };
+  const goBackHandler = (e) => {
     navigate(-1);
   };
   return (
@@ -21,7 +29,7 @@ const Login = () => {
       <div className={classes.topbar}>
         <div className={classes.backButton}>
           <KeyboardBackspaceOutlined
-            onClick={backClickHandler}
+            onClick={goBackHandler}
             fontSize="medium"
           />
         </div>
@@ -61,6 +69,7 @@ const Login = () => {
             color="primary"
             startIcon={<LoginOutlined fontSize="small" />}
             sx={{ padding: ".6rem 1rem", width: "100%" }}
+            onClick={loginHandler}
           >
             Login
           </Button>

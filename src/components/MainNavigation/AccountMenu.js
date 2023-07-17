@@ -9,7 +9,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Settings,
   Logout,
@@ -18,15 +18,24 @@ import {
 } from "@mui/icons-material";
 import classes from "./AccountMenu.module.css";
 import avatarImg from "../../assets/avatar.jpeg";
-
+import { useSelector, useDispatch } from "react-redux";
+import { authActions } from "../../redux/slices/auth-slice";
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const logoutHandler = (event) => {
+    event.preventDefault();
+    dispatch(authActions.logout());
+    navigate("/login");
   };
   return (
     <>
@@ -122,7 +131,7 @@ export default function AccountMenu() {
         </Link>
         <Divider />
         <Link to="/login" className={classes.link}>
-          <MenuItem onClick={handleClose}>
+          <MenuItem onClick={logoutHandler}>
             <ListItemIcon>
               <Logout fontSize="small" />
             </ListItemIcon>

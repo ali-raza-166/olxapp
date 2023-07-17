@@ -4,14 +4,18 @@ import { Stack, Typography, Button } from "@mui/material";
 import { LoginOutlined, SellOutlined } from "@mui/icons-material";
 import LocationsAutoComplete from "./LocationsAutoComplete";
 import CategoriesNavigation from "./CategoriesNavigation";
+import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
-import { useState } from "react";
 import AccountMenu from "./AccountMenu";
+import { useSelector, useReducer, useDispatch } from "react-redux";
+import { authActions } from "../../redux/slices/auth-slice";
 const MainNavigation = () => {
-  const [isAuth, setIsAuth] = useState(true);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const dispatch = useDispatch();
   const withoutNavRoutes = ["/post", "/login", "/signup"];
   const { pathname } = useLocation();
   if (withoutNavRoutes.some((item) => pathname.includes(item))) return null;
+
   return (
     <div className={classes.wrapper}>
       <Stack direction="column" spacing={1}>
@@ -28,16 +32,18 @@ const MainNavigation = () => {
           <LocationsAutoComplete />
           <SearchBar />
 
-          {isAuth ? (
+          {isLoggedIn ? (
             <AccountMenu />
           ) : (
-            <Button
-              variant="contained"
-              color="secondary"
-              startIcon={<LoginOutlined fontSize="small" />}
-            >
-              Login
-            </Button>
+            <NavLink to="/login">
+              <Button
+                variant="contained"
+                color="secondary"
+                startIcon={<LoginOutlined fontSize="small" />}
+              >
+                Login
+              </Button>
+            </NavLink>
           )}
           <NavLink to="/post">
             <Button
