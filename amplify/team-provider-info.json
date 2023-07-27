@@ -20,6 +20,12 @@
       },
       "storage": {
         "s3olxnew": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3dojm15vat7hw",
+          "type": "manual"
+        }
       }
     }
   }

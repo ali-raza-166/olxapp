@@ -175,7 +175,7 @@ const AdForm = () => {
             justifyContent="space-between"
           >
             <p>Your phone number</p>
-            <p>+923067722166</p>
+            <p>+123456789</p>
           </Stack>
         </div>
         <hr className={classes.horizontalLine} />
