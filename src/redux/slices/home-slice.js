@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { Storage, API } from "aws-amplify";
 const homeSlice = createSlice({
   name: "home",
   initialState: {

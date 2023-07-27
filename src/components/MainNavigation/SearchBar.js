@@ -18,7 +18,8 @@ const SearchBar = () => {
       value={searchTerm}
       onChange={handleChange}
       sx={{
-        width: 600,
+        maxWidth: { xs: "300px", sm: "100%" },
+        width: "100%",
       }}
       InputProps={{
         startAdornment: (

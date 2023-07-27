@@ -17,16 +17,40 @@ const CategoriesNavigation = () => {
         }}
       >
         <CategoriesDropdown />
-        <Typography sx={{ fontSize: ".8rem", cursor: "pointer" }}>
+        <Typography
+          sx={{
+            fontSize: ".8rem",
+            cursor: "pointer",
+            display: { xs: "none" },
+          }}
+        >
           Mobile Phones
         </Typography>
-        <Typography sx={{ fontSize: ".8rem", cursor: "pointer" }}>
+        <Typography
+          sx={{
+            fontSize: ".8rem",
+            cursor: "pointer",
+            display: { xs: "none" },
+          }}
+        >
           Cars
         </Typography>
-        <Typography sx={{ fontSize: ".8rem", cursor: "pointer" }}>
+        <Typography
+          sx={{
+            fontSize: ".8rem",
+            cursor: "pointer",
+            display: { xs: "none" },
+          }}
+        >
           Houses
         </Typography>
-        <Typography sx={{ fontSize: ".8rem", cursor: "pointer" }}>
+        <Typography
+          sx={{
+            fontSize: ".8rem",
+            cursor: "pointer",
+            display: { xs: "none" },
+          }}
+        >
           MotoCycles
         </Typography>
       </Paper>

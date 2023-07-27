@@ -44,7 +44,7 @@ export default function AdCardHorizontal({ data }) {
               </IconButton>
             </div>
             <Typography
-              sx={{ fontSize: "18px" }}
+              sx={{ fontSize: { xs: "14px", sm: "18px" } }}
               variant="body2"
               color="text.secondary"
             >
@@ -54,15 +54,23 @@ export default function AdCardHorizontal({ data }) {
           <div className={classes.cardContentFooter}>
             <div className={classes.cardFooter}>
               <div className={classes.locationContainer}>
-                <LocationOnOutlined sx={{ color: "grey", fontSize: "large" }} />
+                <LocationOnOutlined
+                  sx={{ color: "grey", fontSize: { xs: "small", sm: "large" } }}
+                />
                 <Typography
                   className={classes.location}
-                  sx={{ color: "grey", fontSize: ".8rem", textAlign: "center" }}
+                  sx={{
+                    color: "grey",
+                    fontSize: { xs: ".6rem", sm: ".8rem" },
+                    textAlign: "center",
+                  }}
                 >
                   {data.location}
                 </Typography>
               </div>
-              <Typography sx={{ fontSize: ".8rem", color: "grey" }}>
+              <Typography
+                sx={{ fontSize: { xs: ".6rem", sm: ".8rem" }, color: "grey" }}
+              >
                 {data.timeStamp}
               </Typography>
             </div>

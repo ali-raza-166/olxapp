@@ -9,7 +9,7 @@ const Footer = () => {
     return null;
   return (
     <div className={classes.footer}>
-      <div>
+      <div className={classes.footerItem1}>
         <h5 className={classes.heading}>POPULAR CATEGORIES</h5>
         <p className={classes.subheading}>Cars</p>
         <p className={classes.subheading}>Bikes</p>

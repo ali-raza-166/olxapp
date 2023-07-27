@@ -35,3 +35,17 @@
   display: flex;
   gap: 1rem;
 }
+@media screen and (max-width: 590px) {
+  .container {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+  }
+  .locationsWrapper {
+    display: none;
+  }
+  .wrapper {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -19,11 +19,10 @@ import {
 import classes from "./AccountMenu.module.css";
 import avatarImg from "../../assets/avatar.jpeg";
 import { useSelector, useDispatch } from "react-redux";
-import { authActions } from "../../redux/slices/auth-slice";
+import { authActions, CognitoSignOut } from "../../redux/slices/auth-slice";
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleClick = (event) => {
@@ -34,7 +33,7 @@ export default function AccountMenu() {
   };
   const logoutHandler = (event) => {
     event.preventDefault();
-    dispatch(authActions.logout());
+    dispatch(CognitoSignOut()).unwrap();
     navigate("/login");
   };
   return (
@@ -99,7 +98,7 @@ export default function AccountMenu() {
           <Avatar src={avatarImg} />
           <div className={classes.greet}>
             <p>Hello,</p>
-            <h3>Ali Raza</h3>
+            <h3>User XYZ</h3>
             <p className={[classes.editProfileButton]}>View or edit profile</p>
           </div>
         </MenuItem>

@@ -13,3 +13,16 @@
   font-weight: bold;
   font-size: 4rem;
 }
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 590px) {
+  .wrapper {
+    padding: 0.5rem 1rem;
+  }
+  .actions {
+    display: flex;
+  }
+}

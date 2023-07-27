@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "olxnew",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "autholxnewb0551e2a",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

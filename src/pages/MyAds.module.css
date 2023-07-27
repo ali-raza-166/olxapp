@@ -6,3 +6,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 590px) {
+  .myAdsListWrapper {
+    flex-direction: column;
+  }
+}

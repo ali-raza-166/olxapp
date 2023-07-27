@@ -16,3 +16,8 @@
   text-align: center;
   color: #002f34;
 }
+@media screen and (max-width: 590px) {
+  .topbar {
+    padding: 0.5rem 1rem;
+  }
+}

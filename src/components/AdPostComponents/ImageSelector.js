@@ -12,7 +12,7 @@ import { useState } from "react";
 import { AddPhotoAlternateOutlined, ClearOutlined } from "@mui/icons-material";
 import classes from "./ImageSelector.module.css";
 
-export default function ImageSelector() {
+export default function ImageSelector(props) {
   const form = useForm();
   const { register, handleSubmit, reset } = form;
   const [uploadState, setUploadState] = useState("initial");
@@ -20,6 +20,8 @@ export default function ImageSelector() {
 
   const handleUploadClick = (event) => {
     var file = event.target.files[0];
+    props.setAdImageURL(file);
+    console.log(file);
     const reader = new FileReader();
     if (file) {
       reader.readAsDataURL(file);
@@ -33,6 +35,7 @@ export default function ImageSelector() {
   const handleResetClick = (event) => {
     setImage(null);
     setUploadState("initial");
+    props.setAdImageURL("");
     reset({ logo: null });
   };
 

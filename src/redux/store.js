@@ -6,6 +6,7 @@ import authReducer from "./slices/auth-slice";
 import homeReducer from "./slices/home-slice";
 import filterReducer from "./slices/filter-slice";
 import favoriteReducer from "./slices/favorite-slice";
+import postAdReducer from "./slices/postad-slice";
 
 const store = configureStore({
   // reducer: { ui: uiReducer, cart: cartReducer },
@@ -14,7 +15,12 @@ const store = configureStore({
     home: homeReducer,
     filter: filterReducer,
     favorites: favoriteReducer,
+    postAd: postAdReducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
 export default store;

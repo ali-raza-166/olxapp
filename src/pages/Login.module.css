@@ -51,3 +51,11 @@
   cursor: pointer;
   margin-top: 7px;
 }
+.error {
+  color: red;
+  padding: 0 3rem;
+  text-align: center;
+}
+.logo {
+  cursor: pointer;
+}

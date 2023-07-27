@@ -20,3 +20,15 @@
 .horizontalLine {
   margin: 0;
 }
+@media screen and (max-width: 590px) {
+  .formWrapper {
+    margin: 0.5rem 1rem;
+  }
+  .formItem {
+    padding: 0.5rem 1rem;
+  }
+  .itemHeading {
+    padding: 0 1rem;
+    font-weight: 500;
+  }
+}

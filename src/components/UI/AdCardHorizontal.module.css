@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-left: 20px;
+  gap: 10px;
 }
 
 .locationContainer {
@@ -19,11 +20,14 @@
 .cardContentFooter {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .cardFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
+}
+.actions {
+  display: flex;
 }

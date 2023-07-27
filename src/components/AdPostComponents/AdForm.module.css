@@ -23,3 +23,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 590px) {
+  .adFormItem {
+    padding: 0.5rem 1rem;
+  }
+  .adFormWrpper {
+    margin: 0 1rem;
+  }
+  .itemHeading {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}

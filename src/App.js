@@ -9,6 +9,9 @@ import Settings from "./pages/Settings";
 import FilteredProducts from "./pages/FilteredProducts";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import { Amplify } from "aws-amplify";
+import awsconfig from "./aws-exports";
+Amplify.configure(awsconfig);
 const router = createBrowserRouter([
   {
     path: "/",

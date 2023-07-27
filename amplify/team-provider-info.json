@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-olxnew-dev-202638-authRole",
+      "UnauthRoleArn": "arn:aws:iam::249144947172:role/amplify-olxnew-dev-202638-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::249144947172:role/amplify-olxnew-dev-202638-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-olxnew-dev-202638-deployment",
+      "UnauthRoleName": "amplify-olxnew-dev-202638-unauthRole",
+      "StackName": "amplify-olxnew-dev-202638",
+      "StackId": "arn:aws:cloudformation:us-east-1:249144947172:stack/amplify-olxnew-dev-202638/7e19ba80-2a36-11ee-a0e1-0e32f14adc4d",
+      "AmplifyAppId": "d3dojm15vat7hw"
+    },
+    "categories": {
+      "auth": {
+        "olxnewb0551e2a": {}
+      },
+      "api": {
+        "olxnew": {}
+      },
+      "storage": {
+        "s3olxnew": {}
+      }
+    }
+  }
+}

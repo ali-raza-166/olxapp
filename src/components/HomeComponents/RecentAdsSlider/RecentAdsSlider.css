@@ -22,3 +22,8 @@
 .slide-style {
   height: 300px;
 }
+@media screen and (max-width: 590px) {
+  .swiper-slide {
+    flex-direction: column;
+  }
+}

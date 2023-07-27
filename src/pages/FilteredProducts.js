@@ -63,7 +63,7 @@ const FilteredProducts = () => {
               price: " RS 132434",
               description: "Lorem ipsum, lorem ipsum, lorem ipsum",
               location: "Lahore, Pakistan",
-              timeStamp: "13 hours ago",
+              timeStamp: "13h ago",
             }}
           />
         </div>
